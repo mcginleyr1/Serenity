@@ -1,0 +1,4 @@
+<object> :: =  <encapsulated-blocks>
+<type> ::= object | int | decimal | string | date | datetime | duration | 
+<variable> ::= <type> <name>
+<string-literal> ::= '"'<text>'"' | "'"<text>"'"
