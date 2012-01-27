@@ -1,12 +1,17 @@
 Data 
-
 <object> ::=  <encapsulated-blocks> <primitives> <objects>
 <object_type> ::= specific subclass of object
 <type> ::= object | int | decimal | string | date | datetime | duration | 
 <variable> ::= <type> <name>
 <set> ::= <collection_of_objects>
 <string-literal> ::= '"'<text>'"' | "'"<text>"'"
-<condition> ::= <value>.[equal|not_equal|less|greater|greater_equal|less_equal](value)
+
+
+Operations
+<condition> ::= (not) <value | expression_result>  [ == | != | > | >= | < | <= | and | or |] <value | expression_result>
+<bitwise_operators> ::= [ &, |, ^, ~, <<, >>, >>> ]
+<operators> ::= [ *, /, +, -, % ]
+<operator_groupings> ::= [ (, ) ]
 
 
 Methods/Functions/Blocks
@@ -27,9 +32,6 @@ Object Defnition
 <object>.<declarative_attribute> ::=  decl <name> <block>
 
 Object Standard Functions
-<object | set>.traverse(<1-M-relationship>, <variable>, <conditional_filter>, <attribute | block | function>)
+<object | set>.traverse(<1-M-relationship>, <variable>, <conditional_filter>, <block | function>)
 <object | set>.[sum|avg|mean](<1-M-relationship>, <variable_name>, <conditional_filter>, <attribute | block | function>)
 
-
-Boolean Standard Functions
-<boolean_value>.not() 
