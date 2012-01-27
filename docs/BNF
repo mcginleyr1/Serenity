@@ -1,4 +1,35 @@
-<object> :: =  <encapsulated-blocks>
+Data 
+
+<object> ::=  <encapsulated-blocks> <primitives> <objects>
+<object_type> ::= specific subclass of object
 <type> ::= object | int | decimal | string | date | datetime | duration | 
 <variable> ::= <type> <name>
+<set> ::= <collection_of_objects>
 <string-literal> ::= '"'<text>'"' | "'"<text>"'"
+<condition> ::= <value>.[equal|not_equal|less|greater|greater_equal|less_equal](value)
+
+
+Methods/Functions/Blocks
+<block> ::= { <logic> }
+<named_block> ::= <variable> = <block>
+<function> ::= func <name> <block>
+<method> ::= method <name> <block>     NOTE: methods have no return
+
+
+Control Logic
+<if-condition> ::= if <boolean_statement> <block>
+<for-loop> ::= for <varible> in <set> <block>
+<do-while-loop> ::= do <condition> 
+
+
+Object Defnition
+<object>.<relationship> ::= [:has_many | :has_one | :belongs_to] <object_type>
+<object>.<declarative_attribute> ::=  decl <name> <block>
+
+Object Standard Functions
+<object | set>.traverse(<1-M-relationship>, <variable>, <conditional_filter>, <attribute | block | function>)
+<object | set>.[sum|avg|mean](<1-M-relationship>, <variable_name>, <conditional_filter>, <attribute | block | function>)
+
+
+Boolean Standard Functions
+<boolean_value>.not() 
