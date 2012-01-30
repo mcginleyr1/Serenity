@@ -8,7 +8,7 @@ Data
 
 
 Operations
-<condition> ::= (not) <value | expression_result>  [ == | != | > | >= | < | <= | and | or |] <value | expression_result>
+<condition> ::= (not) <value | expression_result>  [ == | != | > | >= | < | <= | and | or ] <value | expression_result>
 <bitwise_operators> ::= [ &, |, ^, ~, <<, >>, >>> ]
 <operators> ::= [ *, /, +, -, % ]
 <operator_groupings> ::= [ (, ) ]
