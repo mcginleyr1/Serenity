@@ -4,6 +4,8 @@ Data
 <type> ::= object | int | decimal | string | date | datetime | duration | 
 <variable> ::= <type> <name>
 <set> ::= <collection_of_objects>
+<sorted_set> ::= <collection of objects order by block, attribute, function>
+    - Set for the rest of this def can be used in place of <set | sorted_set>
 <string-literal> ::= '"'<text>'"' | "'"<text>"'"
 
 
