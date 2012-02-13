@@ -1,8 +1,8 @@
-BOML:
-BOML Is a business oriented modeling language.  The goal is to create a simple language that will allow people with little programming experience to easily model their business processes.  More information to come on language syntax and capabilities including the propagator.
+Claru
+Claru is a dynamic programming language and virtual machine set. More information to come on language syntax and capabilities including the propagator.
 
 Technical Specifics:
-BOML Should be able to seamlessly integrate with Redis, MySQL, Postgres and eventually MSSql, Riak and other proven datastores.
-BOML Will provide both functions, oo, and declarative syntaxes.  
+Should be able to seamlessly integrate with Redis, MySQL, Postgres and eventually MSSql, Riak and other proven datastores.
+Will provide both functions, oo, and declarative syntaxes.  
 The declarative syntax will be backed with a Propagation engine.  This engine wil determin depencenies and automatically calculate values for attributes of objects, or globals.  -- more clear definition to come. 
 
