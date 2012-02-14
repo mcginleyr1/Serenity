@@ -7,14 +7,13 @@ Data
 <sorted_set> ::= <collection of objects order by block, attribute, function>
     - Set for the rest of this def can be used in place of <set | sorted_set>
 <string-literal> ::= '"'<text>'"' | "'"<text>"'"
-
+<hash> ::= <string-literal | int> : <variable>
 
 Operations
 <condition> ::= (not) <value | expression_result>  [ == | != | > | >= | < | <= | and | or ] <value | expression_result>
 <bitwise_operators> ::= [ &, |, ^, ~, <<, >>, >>> ]
 <operators> ::= [ *, /, +, -, % ]
 <operator_groupings> ::= [ (, ) ]
-
 
 Methods/Functions/Blocks
 <block> ::= { <logic> }
@@ -27,7 +26,6 @@ Control Logic
 <if-condition> ::= if <boolean_statement> <block>
 <for-loop> ::= for <varible> in <set> <block>
 <do-while-loop> ::= do <condition> 
-
 
 Object Defnition
 <object>.<relationship> ::= [:has_many | :has_one | :belongs_to] <object_type>

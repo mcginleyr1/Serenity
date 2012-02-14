@@ -1,8 +1,7 @@
-Claru
-Claru is a dynamic programming language and virtual machine set. More information to come on language syntax and capabilities including the propagator.
+
+Is a object-oriented and declarative programming language with a dynamic, pluggable virtual machine architecture. For information on the language constructs and defnition view the grammar in docs/BNF.
 
 Technical Specifics:
 Should be able to seamlessly integrate with Redis, MySQL, Postgres and eventually MSSql, Riak and other proven datastores.
-Will provide both functions, oo, and declarative syntaxes.  
-The declarative syntax will be backed with a Propagation engine.  This engine wil determin depencenies and automatically calculate values for attributes of objects, or globals.  -- more clear definition to come. 
+The declarative syntax will be backed with a Propagation engine.  This engine will determine depencenies and automatically calculate values for attributes of objects, or globals. For specification on the architecture see docs/Interpreter
 
