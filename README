@@ -3,5 +3,5 @@ Is a object-oriented and declarative programming language with a dynamic, plugga
 
 Technical Specifics:
 Should be able to seamlessly integrate with Redis, MySQL, Postgres and eventually MSSql, Riak and other proven datastores.
-The declarative syntax will be backed with a Propagation engine.  This engine will determine depencenies and automatically calculate values for attributes of objects, or globals. For specification on the architecture see docs/Interpreter
+The declarative syntax will be backed with a Propagation engine.  This engine will determine dependencies and automatically calculate values for attributes of objects, or globals. For specification on the architecture see docs/Interpreter
 
