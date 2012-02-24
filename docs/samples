@@ -1,0 +1,29 @@
+task_list = []
+
+class Task {
+    :has_one Task previous
+    :has_one Task next
+    :has_many SubTask steps 
+
+    decl start_time {
+        max(self.user_start_time, self.previous.start_time)
+    }
+        
+    decl end_time {
+        self.start_time + self.duration
+    }
+
+    proc constructor(duration, user_start_time) {
+        self.user_start_time = user_start_time
+        self.duration = duration
+    }
+
+}
+
+
+
+proc add_task() {
+    task = Task()
+    last_task = task_list.max(Elements, t, t.end_time)
+    task_list.add(task)
+}
