@@ -1,8 +1,8 @@
 Data 
 <object> ::=  <encapsulated-blocks> <primitives> <objects>
 <object_type> ::= specific subclass of object
-<type> ::= object | int | decimal | string | date | datetime | duration | 
-<variable> ::= <type> <name>
+<type> ::= object | int | decimal | string | date | datetime | duration |  
+<variable> ::= <optionally<type>> <name>
 <set> ::= <collection_of_objects>
 <sorted_set> ::= <collection of objects order by block, attribute, function>
     - Set for the rest of this def can be used in place of <set | sorted_set>
@@ -32,6 +32,6 @@ Object Defnition
 <object>.<declarative_attribute> ::=  decl <name> <block>
 
 Object Standard Functions
-<object | set>.traverse(<1-M-relationship>, <variable>, <conditional_filter>, <block | function>)
-<object | set>.[sum|avg|mean](<1-M-relationship>, <variable_name>, <conditional_filter>, <attribute | block | function>)
+<object | set>.traverse(<1-M-relationship>, <variable>, <block | function>, <conditional_filter>)
+<object | set>.[sum|avg|mean](<1-M-relationship>, <variable_name>,  <attribute | block | function>, <conditional_filter>)
 
