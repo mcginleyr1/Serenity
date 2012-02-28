@@ -1,9 +1,9 @@
 task_list = []
 
 class Task {
-    :has_one Task previous
-    :has_one Task next
-    :has_many SubTask steps 
+    rel hasone previous
+    rel hasone next
+    rel hasmany steps 
 
     decl start_time {
         max(self.user_start_time, self.previous.start_time)
