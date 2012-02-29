@@ -1,9 +1,11 @@
 task_list = []
 
 class Task {
-    rel hasone previous
-    rel hasone next
-    rel hasmany steps 
+    relations { 
+        has_one previous
+        has_one next
+        has_many steps 
+    }
 
     decl start_time {
         max(self.user_start_time, self.previous.start_time)

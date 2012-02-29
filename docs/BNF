@@ -14,6 +14,7 @@ Operations
 <bitwise_operators> ::= [ &, |, ^, ~, <<, >>, >>> ]
 <operators> ::= [ *, /, +, -, % ]
 <operator_groupings> ::= [ (, ) ]
+<max|min|avg|sum>(<values>)
 
 Methods/Functions/Blocks
 <block> ::= { <logic> }
