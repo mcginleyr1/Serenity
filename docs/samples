@@ -6,7 +6,7 @@ class Task {
     rel hasmany steps 
 
     decl start_time {
-        max(self.user_start_time, self.previous.start_time)
+        max(self.user_start_time, self.previous.end_time)
     }
         
     decl end_time {
@@ -16,6 +16,10 @@ class Task {
     proc constructor(duration, user_start_time) {
         self.user_start_time = user_start_time
         self.duration = duration
+    }
+
+    func wait_time {
+        return self.start_time - self.previous.end_time
     }
 
 }
