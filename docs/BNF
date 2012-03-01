@@ -8,6 +8,7 @@ Data
     - Set for the rest of this def can be used in place of <set | sorted_set>
 <string-literal> ::= '"'<text>'"' | "'"<text>"'"
 <hash> ::= <string-literal | int> : <variable>
+<range> ::= <range(<start>, <inclusive_end>)>
 
 Operations
 <condition> ::= (not) <value | expression_result>  [ == | != | > | >= | < | <= | and | or ] <value | expression_result>
@@ -26,11 +27,18 @@ Methods/Functions/Blocks
 Control Logic
 <if-condition> ::= if <boolean_statement> <block>
 <for-loop> ::= for <varible> in <set> <block>
-<do-while-loop> ::= do <condition> 
+<do-while-loop> ::= do <block> while <condition> 
+<while-loop> ::= while <condition> <block>
+<ternary> ::= <condition> ? <true_statement> : <false_statement>
 
 Object Defnition
-<object>.<relationship> ::= [:has_many | :has_one | :belongs_to] <object_type>
-<object>.<declarative_attribute> ::=  decl <name> <block>
+class <class_name> {
+    <relationships> ::= relations { [has_many | has_one | belongs_to] <name> }
+    <declarative_attribute> ::=  decl <name> <block>
+    <procedure> ::= proc <name> <parameters> <block>
+    <function> ::= func <name> <parameters> <block>
+}
+
 
 Object Standard Functions
 <object | set>.traverse(<1-M-relationship>, <variable>, <block | function>, <conditional_filter>)
