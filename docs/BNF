@@ -10,18 +10,20 @@ Data
 <hash> ::= <string-literal | int> : <variable>
 <range> ::= <range(<start>, <inclusive_end>)>
 
+
 Operations
-<condition> ::= (not) <value | expression_result>  [ == | != | > | >= | < | <= | and | or ] <value | expression_result>
+<condition> ::= (!) <value>  [ == | != | > | >= | < | <= | and | or ] <value>
 <bitwise_operators> ::= [ &, |, ^, ~, <<, >>, >>> ]
 <operators> ::= [ *, /, +, -, % ]
 <operator_groupings> ::= [ (, ) ]
 <max|min|avg|sum>(<values>)
 
+
 Methods/Functions/Blocks
 <block> ::= { <logic> }
 <named_block> ::= <variable> = <block>
-<function> ::= func <name> <block>
-<method> ::= method <name> <block>     NOTE: methods have no return
+<function> ::= func <name> <returning-block>
+<procedure> ::= proc <name> <nonreturning-block>
 
 
 Control Logic
