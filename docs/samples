@@ -33,3 +33,11 @@ proc add_task() {
     last_task = task_list.max(Elements, t, t.end_time)
     task_list.add(task)
 }
+
+func get_task(start_time) {
+    task_list.select(Elements, task, task, task.start_time == start_time)
+}
+
+func get_start_times() {
+    task_list.selectset(Elements, task, task.start_time)
+}
