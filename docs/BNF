@@ -1,3 +1,6 @@
+#This is not a completely traditional BNF.  I'm using a modified syntax/style to hopefully increase readability
+# for non cs users.
+
 Data 
 <object> ::=  <encapsulated-blocks> <primitives> <objects>
 <object_type> ::= specific subclass of object
