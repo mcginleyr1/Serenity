@@ -50,3 +50,6 @@ Object Standard Functions
 <object | set>.[sum|avg|mean](<1-M-relationship>, <variable_name>,  <attribute | block | function>, <conditional_filter>)
 <reduction> ::= <set, hash, obj>.select(<relation>, <variable_name>, <attribute | block | function>, <conditional>
 <list_comprehension> ::= <set, hash, obj>.selectset(<relation>, <variable_name>, <attribute | block | function>, <conditional>
+
+Import/Require management
+import root.package.to.file 
