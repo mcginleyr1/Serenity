@@ -1,5 +1,5 @@
 The goal of this project is two fold.  The primary objective is to create a pluggable virtual machine arhitecture that can compete with the jvm.  
-Another objective is to create a programming language that makes full use of the vm arhitecture by including things like declarative programming with value propagation. For information on the language constructs and defnition view the grammar in docs/BNF.
+Another objective is to create a programming language that makes full use of the vm arhitecture by including things like declarative programming with value propagation (think prolog). For information on the language constructs and defnition view the grammar in docs/BNF.
 
 Technical Specifics:
 The declarative syntax will be backed with a Propagation engine.  This engine will determine dependencies and automatically calculate values for attributes of objects, or globals. For specification on the architecture see docs/Interpreter
