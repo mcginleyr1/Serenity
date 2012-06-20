@@ -3,7 +3,10 @@ class Token {
     string type; 
     uint id;
 
-    this() {
+    this(value, type, id) {
+        this.value = value;
+        this.type = type;
+        this.id = id;
     }
 
 }
