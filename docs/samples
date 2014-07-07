@@ -30,14 +30,14 @@ class Task {
 
 proc add_task() {
     task = Task()
-    last_task = task_list.max(Elements, t, t.end_time)
+    last_task = max(task_list, t, t.end_time)
     task_list.add(task)
 }
 
 func get_task(start_time) {
-    task_group_list.filter(Elements.Task, task_instance, task.start_time == start_time)
+    filter(task_group_list, Task, task_instance, task.start_time == start_time)
 }
 
 func get_start_times() {
-    task_list.filter(Elements, task, task.start_time, task.start_time > DatTime::Now())
+    filter(task_list, task, task.start_time)
 }

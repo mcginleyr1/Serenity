@@ -46,11 +46,11 @@ class <class_name> {
 
 
 Object Standard Functions
-<set | object>.map(<1-M-relationship>, <variable>, <block | function>, <conditional_filter>)
-<object | set>.[sum|avg|mean](<1-M-relationship>, <variable_name>,  <attribute | block | function>, <conditional_filter>)
-<set, hash, obj>.filter(<relation>, <variable_name>, <attribute | block | function>, <conditional>)
-<set, hash, obj>.tail(<relation>, <variable>, <conditional>
-<set, hash, obj>.head(<relation>, <variable>, <conditional>
+map(<set | object>, <1-M-relationship>, <variable>, <block | function>, <conditional_filter>)
+[sum|avg|mean](<object | set>, <1-M-relationship>, <variable_name>,  <attribute | block | function>, <conditional_filter>)
+<reduction> ::= filter(<set, hash, obj>, <relation>, <variable_name>, <attribute | block | function>, <conditional>)
+<tail> ::= tail(<set, hash, obj>, <relation>, <variable>, <conditional>
+<head> ::= head(<set, hash, obj>, <relation>, <variable>, <conditional>
 
 #Full set of functions
 # map
